@@ -1,5 +1,4 @@
 import React from "react";
-import HeroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 
@@ -32,7 +31,6 @@ const Home = () => {
             </Link>
           </div>
         </div>
-
         {/* <div>
           <img
             src={HeroImage}
