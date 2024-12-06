@@ -5,18 +5,17 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import redux  from "../assets/redux.png";
-import bootstrap from "../assets/Bootstrap.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
-
+import java from "../assets/java.png";
 
 const Experience = () => {
   const techs = [
     {
       id: 1,
-      src: html,
-      title: "HTML",
-      style: "shadow-orange-500",
+      src: java,
+      title: "Java",
+      style: "shadow-indigo-500",
     },
     {
       id: 2,
@@ -49,10 +48,11 @@ const Experience = () => {
       style: "shadow-purple-500",
     },
     {
+      
       id: 7,
-      src: bootstrap,
-      title: "Bootstrap",
-      style: "shadow-indigo-500",
+      src: html,
+      title: "HTML",
+      style: "shadow-orange-500",
     },
     {
       id: 8,

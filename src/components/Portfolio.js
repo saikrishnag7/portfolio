@@ -1,6 +1,7 @@
 import React from "react";
 import portfolio from "../assets/portfolio/Portfolio.png";
-import netflix from "../assets/portfolio/netflix.jpg"
+import netflix from "../assets/portfolio/netflix.jpg";
+import todo from "../assets/portfolio/todolist.png";
 
 
 const Portfolio = () => {
@@ -8,12 +9,25 @@ const Portfolio = () => {
     {
       id: 1,
       src:netflix,
-      code :"https://github.com/saikrishnag7/netflix-gpt"
+      demo :"https://main--subtle-basbousa-285352.netlify.app/",
+      code :"https://github.com/saikrishnag7/netflix-gpt",
+      title : "Netflix Clone"
     },
     {
       id: 2,
+      src: todo,
+      code : "https://github.com/saikrishnag7/todo-list",
+      demo :"https://classy-frangollo-8a80a4.netlify.app/",
+      title : "Todo App"
+
+    },
+    {
+      id: 3,
       src: portfolio,
-      code :"https://github.com/saikrishnag7/portfolio"
+      demo :"/",
+      code :"https://github.com/saikrishnag7/portfolio",
+      title : "Portfolio"
+
     },
   ];
 
@@ -31,23 +45,24 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src ,code }) => (
+          {portfolios.map(({ id, src ,code,title,demo }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
+              <h1 className="font-bold text-white pt-4  justify-self-center">{title}</h1>
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+              <a href ={demo}>
+                <button href ={demo} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" rel="noreferrer" target='_blank'>
                   Demo
                 </button>
+                </a>
             
-                <a href={code} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <a href={code} className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105" rel="noreferrer" target='_blank'>
                   Code
                 </a>
-                
-               
                 
               </div>
             </div>
